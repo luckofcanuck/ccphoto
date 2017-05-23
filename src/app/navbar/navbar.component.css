@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    border-bottom: 1px solid darkgrey;
+    width: 50vw;
+    position: absolute;
+    left: 25vw;
+    top: 50px;
+}
+.container {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}

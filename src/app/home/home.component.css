@@ -1,0 +1,30 @@
+
+
+img {
+    position: relative;
+    left: 20vw;
+    max-width: 60vw;
+}
+
+.reserved {
+    margin-top: 12px;
+    text-align: center;
+    position: relative;
+}
+
+.reserved::after {
+    content: '';
+    border-bottom: 1px solid darkgrey;
+    width: 20vw;
+    position: absolute;
+    left: 40vw;
+    top: 26px;
+}
+
+.container {
+    margin-top: 12px;
+}
+
+.socialDiv {
+    text-align: center;
+}

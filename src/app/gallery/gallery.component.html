@@ -1,0 +1,8 @@
+<div class="images container-fluid" *ngFor="let img of images; let i = index">
+    <div class="imgWrapper" *ngIf="!showingBig">
+        <img src="{{img.small}}" (click)="showingBig = !showingBig; img[i] = !img[i]"/>
+    </div>
+    <div class="big" *ngIf="img[i]">
+        <img src="{{img.big}}" (click)="showingBig = false; img[i] = false"/>
+    </div>
+</div>
