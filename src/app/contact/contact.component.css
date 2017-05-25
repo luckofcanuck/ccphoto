@@ -1,0 +1,12 @@
+.socialContainer {
+    margin-top: 60px;
+}
+
+.socialDiv {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.socialDiv:hover {
+    cursor: pointer;
+}

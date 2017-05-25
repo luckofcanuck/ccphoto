@@ -1,8 +1,42 @@
-<div class="images container-fluid" *ngFor="let img of images; let i = index">
-    <div class="imgWrapper" *ngIf="!showingBig">
-        <img src="{{img.small}}" (click)="showingBig = !showingBig; img[i] = !img[i]"/>
+
+
+<div *ngFor="let img of images; let i = index" class="container">
+    <div *ngIf="i % 3 === 0" class="row">
+        <div class="col-xs-12">
+            <img src="{{images[i].small}}" (click)="img[i] = !img[i]"/>
+        </div>
+        <div class="col-xs-12" *ngIf="images.length > (i + 1)">
+            <img src="{{images[i + 1].small}}" (click)="img[i + 1] = !img[i + 1]"/>
+        </div>
+        <div class="col-xs-12" *ngIf="images.length > (i + 2)">
+            <img src="{{images[i + 2].small}}" (click)="img[i + 2] = !img[i + 2]"/>
+        </div>
     </div>
-    <div class="big" *ngIf="img[i]">
-        <img src="{{img.big}}" (click)="showingBig = false; img[i] = false"/>
+    <div *ngIf="img[i]" class="big" [@fadeIn]>
+        <img src="{{images[i].big}}" (click)="img[i] = false"/>
+    </div>
+    <div *ngIf="img[i + 1]" class="big" [@fadeIn]>
+        <img src="{{images[i + 1].big}}" (click)="img[i + 1] = false"/>
+    </div>
+    <div *ngIf="img[i + 2]" class="big" [@fadeIn]>
+        <img src="{{images[i + 2].big}}" (click)="img[i + 2] = false"/>
+    </div>
+</div>
+
+
+<div class="container socialContainer">
+    <div class="row">
+        <div class="col-xs-1 col-xs-offset-4 socialDiv">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </div>
+        <div class="col-xs-1 socialDiv">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
+        <div class="col-xs-1 socialDiv">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+        <div class="col-xs-1 socialDiv">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+        </div>
     </div>
 </div>

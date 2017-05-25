@@ -27,4 +27,9 @@ img {
 
 .socialDiv {
     text-align: center;
+    margin-bottom: 50px;
+}
+
+.socialDiv:hover {
+    cursor: pointer;
 }

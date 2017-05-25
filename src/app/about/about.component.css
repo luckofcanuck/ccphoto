@@ -1,0 +1,43 @@
+img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: outset;
+    border-width: 1px;
+    border-color: grey;
+}
+
+.aboutContainer {
+    margin-bottom: 24px;
+}
+
+.socialContainer{
+    margin-bottom: 24px;
+}
+
+.socialDiv {
+    text-align: center;
+}
+
+.socialDiv:hover {
+    cursor: pointer;
+}
+
+p {
+    font-family: "Open Sans", sans-serif; 
+}
+
+
+
+
+@media (max-width: 991px) {
+    img {
+        max-height: 30vh;
+        width: auto;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}

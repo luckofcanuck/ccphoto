@@ -3,6 +3,10 @@ h1 {
     position: relative;
 }
 
+h1:hover {
+    cursor: pointer;
+}
+
 h1::after {
     content: '';
     border-bottom: 1px solid darkgrey;
@@ -15,4 +19,8 @@ h1::after {
     text-align: center;
     margin-top: 24px;
     margin-bottom: 24px;
+}
+
+.col-xs-3:hover {
+    cursor: pointer;
 }
