@@ -34,6 +34,10 @@ img {
     cursor: pointer;
 }
 
+a {
+    color: black;
+}
+
 @media (max-width: 370px) {
     .reserved::after {
         opacity: 0;
