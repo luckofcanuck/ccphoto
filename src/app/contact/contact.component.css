@@ -10,3 +10,9 @@
 .socialDiv:hover {
     cursor: pointer;
 }
+
+a {
+    text-decoration: none;
+    display: block;
+    color: black;
+}

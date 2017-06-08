@@ -33,3 +33,9 @@ img {
 .socialDiv:hover {
     cursor: pointer;
 }
+
+@media (max-width: 370px) {
+    .reserved::after {
+        opacity: 0;
+    }
+}
