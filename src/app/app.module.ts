@@ -35,7 +35,7 @@ const appRoutes: Routes  = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes, {useHash: true}),
     BrowserAnimationsModule
   ],
   providers: [],
